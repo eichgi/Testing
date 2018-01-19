@@ -1,0 +1,21 @@
+<h1>{{message}}</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Titulo</th>
+        <th>Descripción</th>
+    </tr>
+    </thead>
+    <tbody>
+    @each(post in posts)
+    <tr>
+        <td>{{post.title}}</td>
+        <td>{{post.body}}</td>
+    </tr>
+    @endeach
+    </tbody>
+</table>
+
+<script>
+    console.log('HOLA');
+</script>
